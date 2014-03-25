@@ -4,6 +4,8 @@
 gris_oscuro = #333333
 gris_claro = #818181
 rojo = #BD255B
+boton_rosado = #CC2F6F
+social_selected = #5FA9DD
 
 a
 	text-decoration none
@@ -12,12 +14,17 @@ body
 	font-family 'Varela Round', sans-serif
 	font-size 16px
 
+.left
+	float left
+
+.right
+	float right
 .button-menu
 	position absolute
-	top 50%
-	margin-top -10px
+	margin 0.7em 0 0 0.7em
 	left .5em
-	color gris_oscuro
+	color white
+	display block
 
 .center-block
 	margin 0 auto
@@ -109,6 +116,17 @@ img
 	margin 0 1em
 
 .playing
+	.actions
+		background rgba(black, 0.2)
+		text-align right
+		padding .7em 1em .7em 0
+		position absolute
+		top 16.9em
+		left 0
+		right 0
+		.action
+			font-size 1.5em
+			color white
 	&.small
 		width 20em
 
@@ -132,3 +150,57 @@ a
 .play
 	.action
 		color gray
+
+#playlist
+	padding 1em 1.2em
+	.name
+	.author
+		margin 0
+	.name
+		font-size 1em
+		font-weight normal
+		color gris_oscuro
+
+	.item
+		padding-top 2em
+		overflow hidden
+		a
+			display inline-block
+			color gris_oscuro
+		.actions
+			float right
+
+#share-section
+	position fixed
+	right 0
+	top 0
+	width 14.5em
+	background rgba(gris_oscuro, .9)
+	height 40em
+	padding 1em 1em	
+	.textarea
+		border-radius .3em
+		width 100%
+		color gris_oscuro
+		height 5em
+	.submit
+		background boton_rosado
+		border none
+		border-radius .2em
+		width 8em
+		height 3em
+		color white
+		text-align center
+	.social-select
+		font-size 1.5em
+		background gris_claro
+		color white
+		border-radius 50%
+		padding .3em
+		margin .2em 0.4em 0 0
+		&.selected
+			background social_selected
+
+
+.wrapp-1tp
+	padding 1em 0
